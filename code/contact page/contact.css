@@ -1,0 +1,305 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.roboto-bold { /*font preloads*/
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/*font preload*/
+header {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 23px;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 35px;
+  color: white;
+}
+
+.btn_abt button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/*body*/
+body { /*sets margin to 0 and sets bg color to black*/
+  margin: 0;
+  background-color: black;
+  color: white;
+}
+
+#head { /*aligns title text in the center*/
+  text-align: center;
+}
+
+/*navbar*/
+ul { /*sets the whole list no style, removes margin and padding, hides overflow to prevent from scrolling*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li { /*sets the navbar content text to be in the left side, with the width change and to set it all in uppercase*/
+  float: left;
+  width: 25%;
+  text-transform: uppercase;
+}
+
+li a, .dropbtn { /*sets display to block, text color to white, alignment to center with padding to give some room and remove text decoration*/
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn { /*sets the bg color to when the hover action is active on the navbar and the dropdown*/
+  background-color: rgb(79, 79, 79);
+}
+
+li.dropdown { /*sets display for the dropdown to inline block*/
+  display: inline-block;
+}
+
+.dropdown-content { /*sets display to none to remove its appearance, sets position to absolute to maintain its place, bg color change*/
+  display: none;
+  position: absolute;
+  background-color: gray;
+  min-width: 384px; /*sets minimum width for responsive purposes*/
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /*sets the box shadow for the dropdown*/
+}
+
+.dropdown-content a {
+  color: white; /*sets text color*/
+  padding: 12px 16px; /*padding adjustments to give it room*/
+  text-decoration: none; /*removes any text decoration*/
+  display: block; /*sets display to block*/
+  text-align: center; /*centers the text on the dropdown text*/
+}
+
+.dropdown-content a:hover { /*sets the bg color as well as the text color for the hover action*/
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content { /*sets the display for the hover towards the class*/
+  display: block;
+}
+
+/*contact info containment*/
+
+.contact-container { /*sets its display to flex to implement the flexbox arrangement for the containment*/
+  display: flex;
+  flex-direction: row;
+  gap: 500px;
+  justify-content: center;
+}
+
+
+.contact-info-left { /*sets display for the class to arrange the following sub-container*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px; /* to give space  */
+}
+
+.info { /*sets its display to flex to give its flexbox adjustments*/
+  display: flex;
+  align-items: center;
+  gap: 40px; 
+}
+
+.info i { /*changes the icon size*/
+  font-size: 25px; 
+}
+
+.info .text { /*arranges the following class into a column placement*/
+  display: flex;
+  flex-direction: column;
+}
+
+.info h1 { /*adjusts font size and margin*/
+  margin: 0;
+  font-size: 20px; 
+}
+
+.info p { /*adjusts the font size and margin*/
+  margin: 0;
+  font-size: 25px; 
+}
+
+.info { /*sets the position to its relative position, and display to be inline*/
+  position: relative;
+  display: inline-block; 
+}
+
+.info i { /*adjusts the font size with margin adjustment and alignment*/
+  font-size: 30px; 
+  margin-right: 10px; 
+  align-items: center;
+}
+
+.info .text { /*removes the display of the class to have its hovering effect */
+  display: none; 
+  position: absolute;
+  top: 0;
+  left: 100%; 
+  white-space: nowrap; 
+  padding: 6px;
+}
+
+.info:hover .text {
+  display: block; /* to show text on hover */
+}
+
+
+/*form css*/
+.form-right { /*sets display to flex to initiate flexbox adjustments, with margin and padding adjustments to give the containment space*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px 10px; 
+  padding: 20px 30px;
+
+}
+input, textarea {
+  width: 100%; /*adjusts width of the class to the max*/
+  padding: 10px; /*padding adjustments to give room for the text*/
+  border: 1px solid #ccc; /*sets a border for the form tags*/
+  border-radius: 4px; /*sets the rounded edges for the following input areas*/
+  box-sizing: border-box; /*sets the sizing for the input texts to be aligned with each other*/
+  margin-top: 5px; /*margin adjustments to give room*/
+  margin-bottom: 25px; /*margin adjustments to give room*/
+  resize: vertical; /*gives the input areas an ability to be resized by the user*/
+}
+
+label, input { /*adjustments for the margin */
+  margin-right: 20px;
+}
+
+input{ /*sets cursor for the input area as pointer*/
+  cursor: pointer;
+}
+
+/*responsive css*/
+/* for small devices like phones*/
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 25px;
+  }
+  
+  li {
+    width: 100%;
+    float: none;
+  }
+
+  .dropdown-content {
+    min-width: 100%;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .info {
+    font-size: 18px;
+  }
+  
+  .info h1 {
+    font-size: 18px;
+  }
+  
+  .info p {
+    font-size: 18px;
+  }
+}
+
+/*for devices like tablets or with similar screen width*/
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  li {
+    width: 50%;
+  }
+
+  .dropdown-content {
+    min-width: 50%;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .info {
+    font-size: 20px;
+  }
+  
+  .info h1 {
+    font-size: 20px;
+  }
+  
+  .info p {
+    font-size: 20px;
+  }
+}
+
+/* for devices like laptops or any similar screen width */
+@media only screen and (min-width: 769px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  li {
+    width: 25%;
+  }
+
+  .dropdown-content {
+    min-width: 384px;
+  }
+
+  .contact-container {
+    flex-direction: row;
+    gap: 350px;
+  }
+
+  .info {
+    font-size: 25px;
+  }
+  
+  .info h1 {
+    font-size: 20px;
+  }
+  
+  .info p {
+    font-size: 25px;
+  }
+}

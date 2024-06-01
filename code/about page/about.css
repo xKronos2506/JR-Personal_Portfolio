@@ -1,0 +1,450 @@
+  /*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.roboto-bold { /*font preloads*/
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/*font preload*/
+header {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 23px;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 35px;
+  color: white;
+}
+
+.btn_abt button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/*body*/
+body { /*sets margin to 0 and sets bg color to black*/
+  margin: 0;
+  background-color: black;
+}
+
+#head { /*aligns title text in the center*/
+  text-align: center;
+}
+
+/*navbar*/
+ul { /*sets the whole list no style, removes margin and padding, hides overflow to prevent from scrolling*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li { /*sets the navbar content text to be in the left side, with the width change and to set it all in uppercase*/
+  float: left;
+  width: 25%;
+  text-transform: uppercase;
+}
+
+li a, .dropbtn { /*sets display to block, text color to white, alignment to center with padding to give some room and remove text decoration*/
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn { /*sets the bg color to when the hover action is active on the navbar and the dropdown*/
+  background-color: rgb(79, 79, 79);
+}
+
+li.dropdown { /*sets display for the dropdown to inline block*/
+  display: inline-block;
+}
+
+.dropdown-content { /*sets display to none to remove its appearance, sets position to absolute to maintain its place, bg color change*/
+  display: none;
+  position: absolute;
+  background-color: gray;
+  min-width: 384px; /*sets minimum width for responsive purposes*/
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /*sets the box shadow for the dropdown*/
+}
+
+.dropdown-content a {
+  color: white; /*sets text color*/
+  padding: 12px 16px; /*padding adjustments to give it room*/
+  text-decoration: none; /*removes any text decoration*/
+  display: block; /*sets display to block*/
+  text-align: center; /*centers the text on the dropdown text*/
+}
+
+.dropdown-content a:hover { /*sets the bg color as well as the text color for the hover action*/
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content { /*sets the display for the hover towards the class*/
+  display: block;
+}
+    /*about css*/
+    .img-container{ /*sets display to flexbox for the two images on the about page, with adjustments to place them in the center of the page*/
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .contain { /*sets the contain class with margins to give room*/
+      margin: 35px 15px;
+    }
+    .img { /*sets the text to center*/
+      text-align: center; 
+    } 
+    .img a{ /*removes any text decoration since it is an anchor tag*/
+      text-decoration: none;
+    }
+    .img img { /*adjusts the images on the img class to its appropriate width and height*/
+      width: 350px;
+      height: 350px;
+    }
+    .img h1 { /*adjusts the text from the img text of its margin*/
+      margin: 10px 0;
+    }
+  
+    .about-tag{ /*sets the text color to black when the user does not hover*/
+      color: black;
+    }
+
+    /*dropdown for the about page*/
+    .contain .abt-dropdown { 
+      display: none; /*removes display for the dropdown on the about page when the user is not hovered over*/
+      position: absolute; /*maintains its position when it is shown*/
+      background-color: rgb(44, 43, 43); /*sets its bg color*/
+      min-width: 350px; /*sets its minimum width*/
+    }
+
+    .contain:hover .abt-dropdown { /*sets its display*/
+      display: block;
+    }
+
+    .contain:hover { /*scales its size when the cursor hovers*/
+      transform: scale(1.1);
+    }
+
+    /*background and experience css*/
+
+    .bg-image img { /*sets the images to its appropriate width*/
+      width: 300px;
+    }
+
+    .container-background { /*sets display to flex to set any flexbox adjustments*/
+      display: flex;
+      flex-direction: row; /*sets the content arrangement to a row*/
+      justify-content: center; /*sets the content to the center of the screen*/
+      margin: 40px 5px; /*sets margins to give space*/
+      gap: 100px; /*sets gap to give space on the following children container*/
+      
+  }
+
+  /* background css hover */
+  .text-right {
+      display: flex; /*sets display to flex*/
+      flex-direction: column; /*sets content arrangement to a row*/
+      background-color: rgb(19, 19, 19); /*sets bg color for the text*/
+      padding: 20px 30px; /*sets padding to give space*/
+      width: 600px; /*sets width for the text*/
+  }
+
+  .bg-text { 
+      position: relative; /*sets the following text to its designed place from the code*/
+      display: inline-block; /*sets its display to be inline within the position*/
+      font-size: 25px; /*adjusts font size*/
+  }
+
+  .bg-text .head { /*adjusts the heading for the following class*/
+      margin-right: 50px;
+      align-items: center;
+  }
+
+  .bg-text .dropdown-background { /*adjustments for the hover effect on the following class*/
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      white-space: nowrap; /*sets the whitespace to prevent wrapping on the other texts*/
+  }
+
+  .bg-text:hover .dropdown-background { /*sets display to block when the user hovers*/
+      display: block;
+  }
+
+  .text-right .background-text { /*sets the display to flex for flexbox arrangement*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .background-text { /*sets the height for the content, as well as changing the width, align content and the bottom margin*/
+      height: 100px;
+      align-content: center;
+      width: 660px;
+      margin-bottom: 10px;
+  }
+
+  .background-text p { /*adjusts the paragraph text from the class provided*/
+    text-align: left;
+    background-color: rgb(19, 19, 19);
+    justify-content: center;
+    padding: 10px 25px;
+    color: white;
+  }
+
+  #typed-text { /*id class adjustments for the typing text effect*/
+    white-space: pre-wrap; 
+    font-size: 16px;
+    color: white;
+    font-style: italic;
+  }
+  /*experience html*/
+
+  .text-right { /*adjustment for the text content*/
+    font-size: 12px;
+    color: rgb(254, 254, 254);
+  }
+
+  #experience-text { /*adjusts the text for the typing effect*/
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+  }
+
+  .experience-video video { /*adjusts the video margin*/
+    margin-top: 20px;
+  }
+
+
+
+
+/*responsive css for adjustment of content*/
+
+/* for devices like phones */
+@media (max-width: 600px) {
+  p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .abt-dropdown h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .text-right h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .background-text p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .img img {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+  }
+
+  .container-background {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .text-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .background-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropdown-content {
+    min-width: 100%;
+  }
+}
+
+/* for devices like tablet-like screens */
+@media (max-width: 768px) {
+  p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .abt-dropdown {
+    width: 10px;
+  }
+  .abt-dropdown h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .text-right h1 {
+    font-size: 19px;
+    text-align: center;
+  }
+
+  .background-text p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .img img {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+  }
+
+  .container-background {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .text-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .background-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropdown-content {
+    min-width: 100%;
+  }
+}
+
+/* for devices like laptops, pcs and such with similar width*/
+@media (min-width: 769px) and (max-width: 1024px) {
+  p {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .abt-dropdown h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .text-right h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .background-text p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .img img {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+  }
+
+  .container-background {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+
+  .text-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .background-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  ul {
+    flex-direction: row;
+  }
+
+  li {
+    width: 25%;
+    text-align: center;
+  }
+
+  .dropdown-content {
+    min-width: 384px;
+  }
+
+  .img-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}   

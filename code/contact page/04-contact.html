@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contact Information</title>
+</head>
+<body>
+    <header> <!--header semantic tag dedicated for the navigation bar and the page title-->
+        <div id="head">
+            <h1>Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="/code/about page/02-about.html" class="dropbtn">About</a>
+                        <div class="dropdown-content"> <!--Dropdown content for the nav bar-->
+                            <a href="/code/about page/02-background.html">Background</a>
+                            <a href="/code/about page/02-experience.html">Experience</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="/code/portfolio page/03-portfolio.html" class="dropbtn">Portfolio</a>
+                        <div class="dropdown-content"> <!--Dropdown content for the nav bar-->
+                            <a href="/code/portfolio page/03-music-prod.html">Music Production</a>
+                            <a href="/code/portfolio page/03-photography.html">Photography</a>
+                            <a href="/code/portfolio page/03-academics.html">Academics</a>
+                        </div>
+                    </li>
+                    <li><a href="/code/contact page/04-contact.html">Contact Information</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <article>
+                <div class="contact-container"> <!--container to initate flexbox module for arrangement-->
+                    <div class="contact-info-left">
+                        <div class="info"> <!--info class for the icons and hovering effect for contact information-->
+                            <i class="fa-solid fa-envelope"></i>
+                            <div class="text">
+                                <h1>Email</h1>
+                                <p>johnrichard20506@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="info">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="text">
+                                <h1>Contact</h1>
+                                <p>055 1542 908</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-right"> <!--container for the forms -->
+                        <h1>Contact Us: </h1>
+                        <form>
+                            <label for="name">Name: </label>
+                            <input type="text" id="name" name="fullname" placeholder="Enter Your fullname...">
+                            <label for="subject">Subject</label>
+                            <textarea type="text" id="subject" name="subject" placeholder="Write me a message..."></textarea>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

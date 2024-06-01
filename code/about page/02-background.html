@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <script src="about.js"></script>
+    <title>Background</title>
+</head>
+<body>
+    <header> <!--header semantic tag dedicated for the navigation bar and the page title-->
+        <div id="head">
+            <h1>Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="/code/about page/02-about.html" class="dropbtn">About</a>
+                        <div class="dropdown-content"> <!--Dropdown content for the nav bar-->
+                            <a href="/code/about page/02-background.html">Background</a>
+                            <a href="/code/about page/02-experience.html">Experience</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="/code/portfolio page/03-portfolio.html" class="dropbtn">Portfolio</a>
+                        <div class="dropdown-content"> <!--Dropdown content for the nav bar-->
+                            <a href="/code/portfolio page/03-music-prod.html">Music Production</a>
+                            <a href="/code/portfolio page/03-photography.html">Photography</a>
+                            <a href="/code/portfolio page/03-academics.html">Academics</a>
+                        </div>
+                    </li>
+                    <li><a href="/code/contact page/04-contact.html">Contact Information</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <article>
+            <div class="container-background"> <!--containment for the following content to arrange them using flexbox-->
+                <section>
+                    <div class="bg-image">
+                        <img src="/code/portfolio assets/homepage.jpeg" alt="homepage image">
+                    </div>
+                </section>
+                <section>
+                    <div class="text-right-container">
+                        <div class="text-right">
+                            <h1 class="bg-title">Background</h1>
+                            <section>
+                                <div class="bg-text">
+                                    <h1 class="head">Age: </h1>
+                                    <div class="dropdown-background">
+                                        <h1>18 years old</h1>
+                                    </div>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="bg-text">
+                                    <h1 class="head">Date of Birth: </h1>
+                                    <div class="dropdown-background">
+                                        <h1>February 5, 2006</h1>
+                                    </div>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="bg-text">
+                                    <h1 class="head">Nationality: </h1>
+                                    <div class="dropdown-background">
+                                        <h1>Filipino</h1>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="background-text">
+                            <p id="bg-text"></p>
+                        </div>
+                    </div>
+                </section>   
+            </div>
+        </article>
+                
+    </main>
+    
+</body>
+</html>

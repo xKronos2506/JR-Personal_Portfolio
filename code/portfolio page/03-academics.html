@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="portfolio.js"></script>
+    <title>Academics</title>
+</head>
+<body>
+    <header> <!--header semantic tag dedicated for the navigation bar and the page title-->
+        <div id="head">
+            <h1>Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="/code/about page/02-about.html" class="dropbtn">About</a>
+                        <div class="dropdown-content"> <!--Dropdown content for the nav bar-->
+                            <a href="/code/about page/02-background.html">Background</a>
+                            <a href="/code/about page/02-experience.html">Experience</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="/code/portfolio page/03-portfolio.html" class="dropbtn">Portfolio</a>
+                        <div class="dropdown-content"> <!--Dropdown content for the nav bar-->
+                            <a href="/code/portfolio page/03-music-prod.html">Music Production</a>
+                            <a href="/code/portfolio page/03-photography.html">Photography</a>
+                            <a href="/code/portfolio page/03-academics.html">Academics</a>
+                        </div>
+                    </li>
+                    <li><a href="/code/contact page/04-contact.html">Contact Information</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <article>
+            <div class="academics-container"> <!--container for flexbox arrangement-->
+                <section>
+                    <div class="certificates-container"> <!--containment for the certificates-->
+                        <h1 id="cert-title">Certificates:</h1>
+                        <div class="cert-pics-container">
+                            <div class="cert-pics"> <!--containment for the certificate pictures-->
+                                <img src="/code/portfolio assets/academics assets/python.png" alt="Python certification" class="cert-img">
+                                <img src="/code/portfolio assets/academics assets/html.png" alt="HTML certification" class="cert-img">
+                                <img src="/code/portfolio assets/academics assets/css.png" alt="CSS certification" class="cert-img">
+                                <img src="/code/portfolio assets/academics assets/js.png" alt="JavaScript certification" class="cert-img">
+                            </div>
+                        </div>
+
+                        <div id="fullscreen-viewer" class="fullscreen-viewer"> <!--div block for the fullscreen module-->
+                            <span class="close-btn" id="close-btn">&times;</span>
+                            <img id="fullscreen-img" class="fullscreen-img">
+                        </div>
+                    </div>
+                </section>                       
+            </div>
+        </article>
+    </main>
+</body>
+</html>

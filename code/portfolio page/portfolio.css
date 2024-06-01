@@ -1,0 +1,407 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.roboto-bold { /*font preloads*/
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/*font preload*/
+header {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 23px;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 35px;
+  color: white;
+}
+
+.btn_abt button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/*body*/
+body { /*sets margin to 0 and sets bg color to black*/
+  margin: 0;
+  background-color: black;
+}
+
+#head { /*aligns title text in the center*/
+  text-align: center;
+}
+
+/*navbar*/
+ul { /*sets the whole list no style, removes margin and padding, hides overflow to prevent from scrolling*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li { /*sets the navbar content text to be in the left side, with the width change and to set it all in uppercase*/
+  float: left;
+  width: 25%;
+  text-transform: uppercase;
+}
+
+li a, .dropbtn { /*sets display to block, text color to white, alignment to center with padding to give some room and remove text decoration*/
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn { /*sets the bg color to when the hover action is active on the navbar and the dropdown*/
+  background-color: rgb(79, 79, 79);
+}
+
+li.dropdown { /*sets display for the dropdown to inline block*/
+  display: inline-block;
+}
+
+.dropdown-content { /*sets display to none to remove its appearance, sets position to absolute to maintain its place, bg color change*/
+  display: none;
+  position: absolute;
+  background-color: gray;
+  min-width: 384px; /*sets minimum width for responsive purposes*/
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /*sets the box shadow for the dropdown*/
+}
+
+.dropdown-content a {
+  color: white; /*sets text color*/
+  padding: 12px 16px; /*padding adjustments to give it room*/
+  text-decoration: none; /*removes any text decoration*/
+  display: block; /*sets display to block*/
+  text-align: center; /*centers the text on the dropdown text*/
+}
+
+.dropdown-content a:hover { /*sets the bg color as well as the text color for the hover action*/
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content { /*sets the display for the hover towards the class*/
+  display: block;
+}
+
+
+/*portfolio dropdown css*/
+.portfolio-container { /*sets display to flex to initate flexbox adjustment, setting content to the center*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contain { /*margin adjustments */
+  margin: 35px 15px;
+}
+
+.img { /*aligns any text within the class content*/
+  text-align: center; 
+}
+
+.img a { /*sets the text adjustments to remove any text decoration and color*/
+  text-decoration: none;
+  color: black;
+}
+
+.img img { /* adjusts the measurement for the width and height*/ 
+  width: 350px;
+  height: 400px;
+}
+
+.img h1 { /*adjustment for the heading placement through the margin*/
+  margin: 10px 0;
+}
+
+
+/*hover for the portfolio page*/
+.contain .portfolio-dropdown { /*removes any display and adjustments when the cursor isnt hovered*/
+  display: none;
+  position: absolute;
+  background-color: rgb(44, 43, 43);;
+  min-width: 350px;
+}
+
+.contain:hover .portfolio-dropdown { /*set display for when the user hovers*/
+  display: block;
+}
+
+.contain:hover { /*sets a transform scale for when the cursor hovers over the following div block*/ 
+  transform: scale(1.1);
+}
+
+/*photography css*/
+.photo-container { /*sets display to flex to initate flexbox arrangements for the container*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200vh; /*sets the minimum height limit*/
+  margin: 120px 20px; /*sets margin for the container to give room*/
+
+}
+
+.photo-grid {
+  display: flex; /*sets display to flex to initate flexbox arrangements*/
+  flex-wrap: wrap; /*sets wrap for the flex-wrap syntax*/
+  gap: 10px; /*sets gap for each picture*/
+  max-width: 1000px;
+}
+
+.photo-grid img {
+  width: calc(33.333% - 10px); /*adjusts the img width of each picture within the class*/
+  box-sizing: border-box; /*to adjust the size of the whole image grid for each photo to be in line within the same*/
+  height: 350px; /*sets image height*/
+  transition: transform 0.3s ease; /*sets transition for when the user hovers over the image*/
+}
+
+.photo-grid img:hover { /*sets a transform scale for when the user hovers over the image*/
+  transform: scale(1.1);
+}
+
+/*academics css*/
+.academics-container { /*sets display to flexbox with the flex-direction be as bottom*/
+  display: flex;
+  flex-direction: column;
+}
+
+.certificates-container { /*adjustments for the content by adding padding to give room, as well as aligning the text*/
+  text-align: center;
+  padding: 20px;
+}
+
+.cert-pics-container { /*sets the display to flex to adjust the following container towards the center using the flexbox module*/
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cert-pics { /*sets the display for the following container into a grid*/
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /*sets the pattern for the placement for the image*/
+  gap: 15px; /*adjusts the gap for the images beside each other*/
+}
+
+.cert-pics img { /*following adjustments for the images within the class, as well as adding a transition effect for hovering and cursor change*/
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.cert-pics img:hover { /*sets a transformation scale for when the cursor hovers over the text*/
+  transform: scale(1.1);
+}
+
+.fullscreen-viewer { /*class designated for the fullscreen function for when the user clicks on the picture*/
+    display: none; /*removes any display unless the user activates the function*/
+    position: fixed; /*sets position to its fixed place*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /*sets the bg color for the fullscreen function*/
+    justify-content: center; /*aligns the content at the center*/
+    align-items: center; /*aligns the item at the center*/
+    z-index: 1000; /*sets the position of the image*/
+}
+
+.fullscreen-img { /*adjustments for the image when the user enters the fullscreen*/
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.close-btn { /*adjustments for the close button adjustment for when the user wishes to exit the fullscreen mode*/
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+/*music production css*/
+.port { /*adjustments for the containment for the audio file and text, with following arrangements appropriate for the hovering effect and its layout*/
+  position: relative;
+  display: inline-block;
+  width: 450px;
+  margin: 15px;
+  padding: 3.5px 15px;
+  border: 1px solid #ccc; 
+  border-radius: 8px;
+}
+
+.port:hover { /*adjusts the shadowing effect for the border when the cursor hovers*/
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.music-dropdown { /*adjustment for the class to remove any display and some adjustments when the cursor hovers over the following class, with following adjustments on the class to optimize its text as well as its background when the user hovers*/
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-left: 30px;
+  min-width: 400px;
+  height: 140px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.music-dropdown p{ /*adjusts font size for the text within the class*/
+  font-size: 20px;
+}
+
+.port:hover .music-dropdown {  /*sets the display for when the user hovers over the class to show the hidden content*/
+  display: block;
+}
+
+/*responsive css for adjustment of content*/
+
+/*for devices like tablets that are bigger*/
+@media (max-width: 992px) {
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  li {
+    width: 50%;
+  }
+  .dropdown-content {
+    min-width: 100%;
+  }
+  
+  .img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .photo-grid img {
+    width: calc(50% - 10px);
+    height: auto;
+  }
+
+  .cert-pics {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .projects-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .project-video video {
+    width: 100%;
+  }
+
+  .port {
+    width: 100%;
+  }
+
+  .music-dropdown {
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+  }
+}
+
+/*for devices like tablets or similar device */
+@media (max-width: 768px) {
+  li {
+    width: 100%;
+  }
+
+  .portfolio-container, 
+  .photo-container,
+  .projects-container {
+    flex-direction: column;
+  }
+
+  .contain {
+    margin: 15px 0;
+  }
+
+  .photo-grid img {
+    width: 100%;
+    height: auto;
+  }
+
+  .cert-pics img {
+    max-width: 100%;
+  }
+
+  .project-video video {
+    width: 100%;
+  }
+
+  .port {
+    width: 100%;
+  }
+
+  .music-dropdown {
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+  }
+}
+
+/* for devices like phones */
+@media (max-width: 576px) {
+  .img img,
+  .photo-grid img,
+  .cert-pics img,
+  .project-video video,
+  .port {
+    width: 100%;
+    height: auto;
+  }
+
+  .portfolio-container, 
+  .photo-container,
+  .projects-container {
+    flex-direction: column;
+  }
+
+  .projects-container {
+    gap: 10px;
+  }
+
+  .music-dropdown {
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+  }
+}
