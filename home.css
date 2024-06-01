@@ -1,0 +1,276 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.roboto-bold { /*font preloads*/
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/*font preload*/
+header {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 23px;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 35px;
+  color: white;
+}
+
+.btn_abt button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/*body*/
+body { /*sets margin to 0 and sets bg color to black*/
+  margin: 0;
+  background-color: black;
+}
+
+#head { /*aligns title text in the center*/
+  text-align: center;
+}
+
+/*navbar*/
+ul { /*sets the whole list no style, removes margin and padding, hides overflow to prevent from scrolling*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li { /*sets the navbar content text to be in the left side, with the width change and to set it all in uppercase*/
+  float: left;
+  width: 25%;
+  text-transform: uppercase;
+}
+
+li a, .dropbtn { /*sets display to block, text color to white, alignment to center with padding to give some room and remove text decoration*/
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn { /*sets the bg color to when the hover action is active on the navbar and the dropdown*/
+  background-color: rgb(79, 79, 79);
+}
+
+li.dropdown { /*sets display for the dropdown to inline block*/
+  display: inline-block;
+}
+
+.dropdown-content { /*sets display to none to remove its appearance, sets position to absolute to maintain its place, bg color change*/
+  display: none;
+  position: absolute;
+  background-color: gray;
+  min-width: 384px; /*sets minimum width for responsive purposes*/
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /*sets the box shadow for the dropdown*/
+}
+
+.dropdown-content a {
+  color: white; /*sets text color*/
+  padding: 12px 16px; /*padding adjustments to give it room*/
+  text-decoration: none; /*removes any text decoration*/
+  display: block; /*sets display to block*/
+  text-align: center; /*centers the text on the dropdown text*/
+}
+
+.dropdown-content a:hover { /*sets the bg color as well as the text color for the hover action*/
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content { /*sets the display for the hover towards the class*/
+  display: block;
+}
+
+/*homepage css*/
+.homepage-container { /*for the containment, sets flex display and with adjustments related to the flexbox module to adjust the content*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+/*image*/
+img { /*adjusts the image to its appropriate size*/
+  height: auto;
+  width: 100%;
+  max-width: 250px;
+}
+
+/*text right side*/
+.home-text-right { /*adjustment to the text alignment, width height and its padding to give ro*/
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+
+}
+
+/* hompage typing effect */
+.home-statement { /*adjustments for the typing effect font size, color and whitespace to help preserve the line breaks*/
+  font-size: 12px;
+  color: rgb(254, 254, 254);
+  white-space: pre-wrap;  
+}
+
+/*button*/
+.btn_abt { /*button adjustment into flexbox adjustments*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.btn_abt a { /*removes any text decoration to the text on the button*/
+  text-decoration: none;
+}
+
+.btn_abt button { 
+  padding: 15px 30px; /*padding to give room for the text*/
+  border: none; /*removes any border adjustments*/
+  border-radius: 5px; /*gives the border its rounded edges*/
+  cursor: pointer; /*sets the cursor to pointer when it hovers*/
+}
+
+.btn_abt:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+}
+
+/* media queries css*/
+
+/* for small devices like phones */
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  li {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+
+  .dropdown-content {
+    min-width: 100%;
+  }
+
+  .homepage-container {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .home-text-right {
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  .btn_abt {
+    margin-top: 20px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+/* for devices like tablets, ipads */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  li {
+    width: 50%;
+    text-align: center;
+  }
+
+  .dropdown-content {
+    min-width: 50%;
+  }
+
+  .homepage-container {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .home-text-right {
+    padding: 15px;
+    font-size: 20px;
+  }
+
+  .btn_abt {
+    margin-top: 30px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+/* for devices like laptops and computers*/
+@media only screen and (min-width: 769px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  li {
+    width: 25%;
+  }
+
+  .dropdown-content {
+    min-width: 384px;
+  }
+
+  .homepage-container {
+    flex-direction: row;
+    gap: 100px;
+    text-align: center;
+  }
+
+  .home-text-right {
+    padding: 20px;
+    font-size: 23px;
+  }
+
+  .btn_abt {
+    margin-top: 50px;
+  }
+
+  p {
+    font-size: 23px;
+  }
+}
