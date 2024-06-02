@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="about.css">
-    <script src="experience.js"></script>
-    <title>Experience</title>
+    <title>About</title>
 </head>
 <body>
     <header> <!--header semantic tag dedicated for the navigation bar and the page title-->
@@ -34,30 +33,26 @@
             </nav>
         </div>      
     </header>
+
     <main>
-        <article>
-            <div class="container-background"> <!--container for arranging the following containers with the flexbox-->
-                <section>
-                    <div class="bg-image">
-                        <img src="/portfolio assets/homepage.jpeg" alt="Experience">
-                    </div>
-                </section>
-                <section>
-                    <div class="text-right">
-                        <h1>Experience</h1>
-                            <div class="experience-block">
-                                <p id="experience-text"></p>
-                            </div>
-                    </div>
-                    <div class="experience-video">
-                        <video width="560" controls>
-                            <source src="portfolio assets/experience/experience.mp4" type="video/mp4"> <!--video tag to add video-->
-                            Video not Found
-                        </video>
-                    </div>
-                </section>    
-            </div>
-        </article>
+        <div class="img-container"> <!--container for the following content to divide children container using flexbox-->
+            <section class="contain">
+                <div class="img">
+                    <a href="02-background.html" class="about-tag"><img src="homepage.jpeg" alt="hompage">
+                    <div class="abt-dropdown">
+                        <h1>Background</h1></a>
+                    </div>    
+                </div>
+            </section> <!--two sections to divide the content into two parts-->
+            <section class="contain">
+                <div class="img">
+                    <a href="02-experience.html" class="about-tag"><img src="homepage.jpeg" alt="hompage">
+                    <div class="abt-dropdown">
+                        <h1>Experience</h1></a>
+                    </div>    
+                </div>
+            </section>
+        </div>
     </main>
 </body>
 </html>
